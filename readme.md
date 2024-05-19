@@ -4,26 +4,34 @@ This project is a Java application that allows two users to exchange messages ov
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get  a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
 - Java 8 or higher
 - Maven
 
-### Installing
+### Instruction
 
 1. Clone the repository
 2. Navigate to the project directory
 3. Run `mvn install` to install the necessary dependencies
 
-## Running the Application
+4. Run `mvn exec:java` to start the User1 
+5. Edit the `pom.xml` file to start User2 by changing the main class to `com.safeai.User2` as shown below:
 
-You can run the application by executing the `User1` and `User2` classes in the `com.safeai` package. 
+ ```bash
+                <configuration>
+                    <mainClass>com.safeai.User2</mainClass>
+                </configuration>
+```
+6. Run again this in a new terminal `mvn exec:java` to start User2
+7. Wait until 'Enter Message' is displayed on the terminal
+8. Now  can start sending messages between User1 and User2
+                
 
-- Run `User1` class: This will initialize a `StreamClient` at port 9000 and wait for `User2` to connect.
-- Run `User2` class: This will initialize a `StreamClient` at port 18888 and connect to `User1`.
-- Wait until "Enter Message" is displayed on the console.
+
+
 
 Both users can then exchange messages.
 
