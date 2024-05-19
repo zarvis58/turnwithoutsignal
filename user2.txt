@@ -1,0 +1,14 @@
+v=0
+o=ice4j.org 0 0 IN null null
+s=-
+t=0 0
+a=ice-options:trickle
+a=ice-ufrag:fd1te1hu7oduo3
+a=ice-pwd:1ffqk7b7jl3tp0r3icnu3o6crc
+m=text 50184 RTP/AVP 0
+c=IN 128.199.182.239 IP4
+a=mid:text
+a=candidate:1 1 udp 2130706431 192.168.1.4 18888 typ host
+a=candidate:2 1 udp 2130706431 fe80:0:0:0:889b:f571:5df8:6696 18888 typ host
+a=candidate:3 1 udp 1677724415 103.122.91.104 18888 typ srflx raddr 192.168.1.4 rport 18888
+a=candidate:4 1 udp 2815 128.199.182.239 50184 typ relay raddr 103.122.91.104 rport 18888
